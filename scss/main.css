@@ -9776,7 +9776,7 @@ input {
 }
 .tabs .tab-header .color {
   color: white;
-  font-size:14px ;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -9788,8 +9788,7 @@ input {
   color: rgb(7, 2, 2);
   cursor: pointer;
 }
-.tabs .tab-header > div:hover
-.tabs .tab-header > div.active {
+.tabs .tab-header > div:hover .tabs .tab-header > div.active {
   font-weight: bold;
   color: #f6f6f6;
 }
@@ -9889,8 +9888,8 @@ input {
   margin: auto;
   overflow: hidden;
 }
-.hero p{
-  color:#f6f6f6
+.hero p {
+  color: #f6f6f6;
 }
 .btn_box {
   padding-left: 25%;
@@ -9925,12 +9924,15 @@ input {
 }
 #btn1 {
   color: #ee2b47;
+  font-size: 20px;
 }
 #btn2 {
   color: white;
+  font-size: 20px;
 }
 #btn3 {
   color: white;
+  font-size: 20px;
 }
 #content2_1 {
   transform: translateX(0%);

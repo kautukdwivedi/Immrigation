@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Canada</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8af8eddf83.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./scss/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="./script/index.js"></script>
+    <!-- Start of Async Drift Code -->
+    <script src="./script/bot.js"></script>
+    <!-- End of Async Drift Code -->
+</head>
+
+
+<body>
+
+    <nav>
+    <div class="logo"><img src="img/logo.png"></div>
+    <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul >
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <label for="btn-1" class="show">Study Abroad <i class="fas fa-caret-down"></i> </label>
+            <a href="#">Study Abroad <i class="fas fa-caret-down"></i></a>
+            <input type="checkbox" id="btn-1">
+            <ul class="only_color">
+                <li><a href="canada.html">Canada</a></li>
+                <li><a href="europe.html">E.U.</a></li>
+                <li><a href="UK.html">U.K.</a></li>
+                <li><a href="australia.html">Australia</a></li>
+                <li><a href="newzealand.html">New Zeland</a></li>
+
+
+            </ul>
+        </li>
+        <li><a href="permanent-residence.html">Permanent Residance</i></a>
+        </li>
+        <li><a href="jobseeker.html">Job Seeker</a></li>
+        <li><a href="IELTS.html">IELTS</a></li>
+        <li><a href="account.html">Sign In</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+     <div class="container" id="score-pop1" style="display: none; ">
+        <div id="popup1" >
+            <div class="row" >
+                <div class="col-md-8">
+                    <div class="well well-sm" style="background-color:#2b5a8f; margin-bottom:0px; ">
+                        
+
+                        <form id="contact-form">
+                            <div class="row">
+
+                                
+
+                                    <h2 style="color:white; padding-bottom:30px; display: inline-block;"> <strong> Check Your Score</strong> </h2>
+                                    <div class="x-touch" onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
+                                        <div class="x">
+                                            <div class="line1"></div>
+                                            <div class="line2"></div>
+                                        </div>
+                                    </div>
+                                
+
+
+
+
+
+                                <div class="form-group items">
+                                    <input id="country_name" type="name" placeholder="Enter Name" required=""
+                                        autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                </div>
+
+
+                                <div class="form-group items">
+                                    <input id="country_age" type="number" placeholder="Enter age" required=""
+                                        autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                </div>
+
+                                <div class="form-group items">
+                                    <select id="country_exp" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                        <option value="Null">Experience</option>
+                                        <option value="0-1 year" rel="icon-temperature">0-1 year</option>
+                                        <option value="1-2 year">1-2 year</option>
+                                        <option value="2-3 year">2-3 year</option>
+
+
+                                    </select>
+                                </div>
+
+
+                                <div class="form-group items">
+                                    <select id="country_edu" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                        <option value="Null">Education</option>
+                                        <option value="12th" rel="icon-temperature">12th</option>
+                                        <option value="Graduation">Graduation</option>
+                                        <option value="Post Graduation">Post Graduation</option>
+                                        <option value="Masters">Masters</option>
+                                        <option value="PHD">PHD</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="form-group items">
+                                    <select id="country_disp" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                        <option value="Null">Disciplines</option>
+                                        <option value="Education" rel="icon-temperature">Education</option>
+                                        <option value="Agriculture & Forestry">Agriculture & Forestry</option>
+                                        <option value="Applied Sciences & Professions">Applied Sciences & Professions
+                                        </option>
+                                        <option value="Arts, Design & Architecture">Arts, Design & Architecture</option>
+                                        <option value="Business & Management">Business & Management</option>
+                                        <option value="Computer Science & IT">Computer Science & IT</option>
+                                        <option value="Education & Training">Education & Training</option>
+                                        <option value="Engineering & Technology">Engineering & Technology</option>
+                                        <option value="Environmental Science & Earth Sciences">Environmental Science &
+                                            Earth Sciences</option>
+                                        <option value="Hospitality, Leisure & Sports">Hospitality, Leisure & Sports
+                                        </option>
+                                        <option value="Humanities">Humanities</option>
+                                        <option value="Journalism & Media">Journalism & Media</option>
+                                        <option value="Law">Law</option>
+                                        <option value="Medicine & Health">Medicine & Health</option>
+                                        <option value="Natural Sciences & Mathematics">Natural Sciences & Mathematics
+                                        </option>
+                                        <option value="Social Science">Social Science</option>
+
+                                    </select>
+                                </div>
+
+                                <!-- <div class="form-group items">
+                            <input id="country_phone" type="number" placeholder="Enter Phone No" required="" autofocus=""
+                                class="form-control rounded-pill border-0 shadow-sm px-4">
+                        </div> -->
+
+
+                                <div class="form-group mb-md-0 items">
+                                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                                        required="required"
+                                        data-validation-required-message="Please enter your phone number." />
+                                    <p class="help-block text-danger"></p>
+
+                                </div>
+
+                                <form>
+                                    <div class="form-group mb-md-0 items" id="recaptcha-container" style="margin-bottom:0;"></div>
+                                    <button class="btn btn-primary btn-md text-uppercase" type="button"
+                                        onclick="phoneAuth(); " style="background-color:#2b5a8f">
+                                        SendCode
+                                    </button>
+
+                                </form>
+
+
+
+                                <form class="items" >
+                                    
+                                    <input class="form-control " type="text" id="verificationCode" 
+                                        placeholder="Enter verification code" />
+
+                                    <button class="btn btn-primary btn-md text-uppercase" id="verifyButton"
+                                        type="button" onclick="codeverify();" style="background-color:#2b5a8f">
+                                        Verify code
+                                    </button>
+                                </form>
+
+                                <div class="form-group items">
+                                    <input id="country_city" type="text" placeholder="Enter City" required=""
+                                        autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                </div>
+
+                                <div class="form-group items">
+                                    <input id="country_email" type="email" placeholder="Enter Email" required=""
+                                        autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                </div>
+
+
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary " id="country_button">Submit</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+  
+
+    <div class="country-image">
+        <img src="./images/canada.jpg" style="width:100%; height:500px;">
+    </div>
+
+
+    <section  id="mid" >
+
+        <div class="container" >
+    
+    
+            <div class="main-row" style="border-radius: 20px; display: inline-block; background-color:#8bb7e9; color: white;">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top:2%;  text-align: center;">
+    
+                    <h3>How well do you fit this programme?
+                        <br>
+                        Find out with our <strong>BestFit </strong> tool!</h3>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                    <img src="https://monet-prtl-co.imgix.net/Shared/BestFit/bestfit_banner_desktop.svg" alt="">
+                    <a style="margin-left:3%;"  onclick="pop1()" class="filled-button" >Check Your Score</a>
+    
+                </div>
+            </div>
+    
+    
+        </div>
+    </section>
+
+    <div class="container" style="width:100%; margin-top:40px; margin-bottom:20px; ">
+
+        <div class="Tabs" style="border-left: none; border-top: none;">
+            <img src="./images/flag-canada.png" style="width:90%;height: 80px; margin-left:5%; border-radius: 5px; ">
+            <button style="margin-top:10px;" class="tablinks" onclick="openEvent(event, 'OView')"
+                id="defaultOpen">Overview</button>
+            <button class="tablinks" onclick="openEvent(event, 'SVisa')">Service Visa</button>
+            <button class="tablinks" onclick="openEvent(event, 'WPermit')">Work Permit</button>
+        </div>
+
+        <div id="OView" class="tabcontent" >
+            <div class="hero">
+                <div class="btn_box">
+                    <button id="btn1" onclick="OpenBtn1()">Pricing</button>
+                    <button id="btn2" onclick="OpenBtn2()">Feature</button>
+                    <button id="btn3" onclick="OpenBtn3()">Work Permit</button>
+                </div>
+                <div id="content1" class="Content-block" >
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nisl tincidunt, accumsan nunc
+                        in, dapibus eros. Nunc id suscipit tortor. Donec dictum lorem lorem, eu sollicitudin orci
+                        scelerisque et. Sed ac diam eu nulla aliquam tempor. Aliquam ac erat sapien. Aliquam venenatis
+                        cursus lectus, in aliquet elit facilisis maximus. Nam leo libero, laoreet ut vestibulum a,
+                        semper et velit.
+
+                        Aenean vitae sem finibus, lacinia nulla eu, hendrerit nunc. Sed a velit semper, dignissim velit
+                        eget, efficitur massa. Nulla eget blandit lorem. Curabitur vulputate consequat purus, in varius
+                        nisi. Donec volutpat maximus ex, ac tincidunt orci. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Vestibulum vulputate, augue at porta maximus, nunc sem tempus enim, id gravida
+                        libero elit ac felis. Vivamus ultricies ac est eu rutrum. Donec ac ipsum ut lectus aliquet
+                        dapibus.
+                        
+                    </p>
+                </div>
+                <div id="content2" class="Content-block">
+                    <p>
+                        Suspendisse erat augue, lobortis vitae velit eu, facilisis ultricies ipsum. Aliquam erat
+                        volutpat. Mauris risus tortor, sollicitudin nec mi vitae, scelerisque luctus felis. Nullam eu
+                        diam in enim ultrices vulputate id sit amet est. Curabitur aliquet libero aliquam ornare
+                        iaculis. Suspendisse iaculis bibendum maximus.
+
+                        Quisque sed ex gravida libero viverra ullamcorper sed at ex. Mauris lacinia a dolor id
+                        fermentum. In at eros id nisi molestie finibus. Sed sed ipsum ac quam condimentum vehicula vitae
+                        sit amet justo. Morbi egestas ultrices dolor, in pharetra massa molestie eu. Nulla maximus
+                        efficitur augue. Nulla cursus, diam ac fermentum posuere, lorem odio posuere ante, quis euismod
+                        quam tellus quis est. Nulla facilisi. Etiam eget justo et risus malesuada maximus.
+                    </p>
+                </div>
+                <div id="content3" class="Content-block">
+                    <p>
+                        Nulla in mollis ipsum. Morbi nec purus sed ipsum imperdiet mattis. In nec posuere mauris,
+                        posuere luctus magna. In congue sapien ut purus fringilla eleifend. Nulla vulputate est nec dui
+                        finibus molestie. Donec sollicitudin nibh ut quam fringilla tempor. Suspendisse eget porttitor
+                        metus, a vehicula urna. Suspendisse felis sem, pharetra at mattis nec, gravida quis enim.
+
+                        Fusce cursus, felis non luctus pharetra, turpis leo tincidunt nulla, vitae volutpat sapien dui a
+                        sapien. Vestibulum id mauris quis dolor placerat congue eget eu tellus. Etiam scelerisque massa
+                        a purus accumsan convallis. Mauris semper accumsan est quis vestibulum. Sed imperdiet elit
+                        massa, sit amet tempus dui scelerisque nec. Vestibulum rhoncus nibh sem, ut tempor est aliquet
+                        lobortis. Praesent varius tortor ac ullamcorper volutpat. Fusce tristique eu tellus et tempor.
+                        Aliquam erat volutpat. Duis egestas sem et massa sagittis imperdiet vitae ac urna. In sit amet
+                        libero nulla. Proin vel arcu libero.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="SVisa" class="tabcontent">
+            <div class="hero">
+                <div class="btn_box">
+                    <button id="btn2_1" onclick="OpenBtn2_1()">Pricing</button>
+                    <button id="btn2_2" onclick="OpenBtn2_2()">Feature</button>
+                    <button id="btn2_3" onclick="OpenBtn2_3()">Work Permit</button>
+                </div>
+                <div id="content2_1" class="Content-block">
+                    <p>
+                        If the applicant is unable to complete his e-visa application form, he may save the application
+                        and may return to
+                        complete the application form by clicking the tab at the bottom of page:
+
+                        After your eVisa applications is submitted, the same shall be scrutinized and if any
+                        Document/Image is not appropriate,
+                        you may be advised on your given e-mail to re-upload the same. To re-upload use the tab at the
+                        bottom of the page.
+                        Applicant should normally receive this mail within 24 hours.
+                    </p>
+                </div>
+                <div id="content2_2" class="Content-block">
+                    <p>
+                        Suspendisse erat augue, lobortis vitae velit eu, facilisis ultricies ipsum. Aliquam erat
+                        volutpat. Mauris risus tortor, sollicitudin nec mi vitae, scelerisque luctus felis. Nullam eu
+                        diam in enim ultrices vulputate id sit amet est. Curabitur aliquet libero aliquam ornare
+                        iaculis. Suspendisse iaculis bibendum maximus.
+
+                        Quisque sed ex gravida libero viverra ullamcorper sed at ex. Mauris lacinia a dolor id
+                        fermentum. In at eros id nisi molestie finibus. Sed sed ipsum ac quam condimentum vehicula vitae
+                        sit amet justo. Morbi egestas ultrices dolor, in pharetra massa molestie eu. Nulla maximus
+                        efficitur augue. Nulla cursus, diam ac fermentum posuere, lorem odio posuere ante, quis euismod
+                        quam tellus quis est. Nulla facilisi. Etiam eget justo et risus malesuada maximus.
+                    </p>
+                </div>
+                <div id="content2_3" class="Content-block">
+                    <p>
+                        Nulla in mollis ipsum. Morbi nec purus sed ipsum imperdiet mattis. In nec posuere mauris,
+                        posuere luctus magna. In congue sapien ut purus fringilla eleifend. Nulla vulputate est nec dui
+                        finibus molestie. Donec sollicitudin nibh ut quam fringilla tempor. Suspendisse eget porttitor
+                        metus, a vehicula urna. Suspendisse felis sem, pharetra at mattis nec, gravida quis enim.
+
+                        Fusce cursus, felis non luctus pharetra, turpis leo tincidunt nulla, vitae volutpat sapien dui a
+                        sapien. Vestibulum id mauris quis dolor placerat congue eget eu tellus. Etiam scelerisque massa
+                        a purus accumsan convallis. Mauris semper accumsan est quis vestibulum. Sed imperdiet elit
+                        massa, sit amet tempus dui scelerisque nec. Vestibulum rhoncus nibh sem, ut tempor est aliquet
+                        lobortis. Praesent varius tortor ac ullamcorper volutpat. Fusce tristique eu tellus et tempor.
+                        Aliquam erat volutpat. Duis egestas sem et massa sagittis imperdiet vitae ac urna. In sit amet
+                        libero nulla. Proin vel arcu libero.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="WPermit" class="tabcontent">
+            <div class="hero">
+                <div class="btn_box">
+                    <button id="btn3_1" onclick="OpenBtn3_1()">Pricing</button>
+                    <button id="btn3_2" onclick="OpenBtn3_2()">Feature</button>
+                    <button id="btn3_3" onclick="OpenBtn3_3()">Work Permit</button>
+                </div>
+                <div id="content3_1" class="Content-block">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nisl tincidunt, accumsan nunc
+                        in, dapibus eros. Nunc id suscipit tortor. Donec dictum lorem lorem, eu sollicitudin orci
+                        scelerisque et. Sed ac diam eu nulla aliquam tempor. Aliquam ac erat sapien. Aliquam venenatis
+                        cursus lectus, in aliquet elit facilisis maximus. Nam leo libero, laoreet ut vestibulum a,
+                        semper et velit.
+
+                        Aenean vitae sem finibus, lacinia nulla eu, hendrerit nunc. Sed a velit semper, dignissim velit
+                        eget, efficitur massa. Nulla eget blandit lorem. Curabitur vulputate consequat purus, in varius
+                        nisi. Donec volutpat maximus ex, ac tincidunt orci. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Vestibulum vulputate, augue at porta maximus, nunc sem tempus enim, id gravida
+                        libero elit ac felis. Vivamus ultricies ac est eu rutrum. Donec ac ipsum ut lectus aliquet
+                        dapibus.
+                    </p>
+                </div>
+                <div id="content3_2" class="Content-block">
+                    <p>
+                        Suspendisse erat augue, lobortis vitae velit eu, facilisis ultricies ipsum. Aliquam erat
+                        volutpat. Mauris risus tortor, sollicitudin nec mi vitae, scelerisque luctus felis. Nullam eu
+                        diam in enim ultrices vulputate id sit amet est. Curabitur aliquet libero aliquam ornare
+                        iaculis. Suspendisse iaculis bibendum maximus.
+
+                        Quisque sed ex gravida libero viverra ullamcorper sed at ex. Mauris lacinia a dolor id
+                        fermentum. In at eros id nisi molestie finibus. Sed sed ipsum ac quam condimentum vehicula vitae
+                        sit amet justo. Morbi egestas ultrices dolor, in pharetra massa molestie eu. Nulla maximus
+                        efficitur augue. Nulla cursus, diam ac fermentum posuere, lorem odio posuere ante, quis euismod
+                        quam tellus quis est. Nulla facilisi. Etiam eget justo et risus malesuada maximus.
+                    </p>
+                </div>
+                <div id="content3_3" class="Content-block">
+                    <p>
+                        Nulla in mollis ipsum. Morbi nec purus sed ipsum imperdiet mattis. In nec posuere mauris,
+                        posuere luctus magna. In congue sapien ut purus fringilla eleifend. Nulla vulputate est nec dui
+                        finibus molestie. Donec sollicitudin nibh ut quam fringilla tempor. Suspendisse eget porttitor
+                        metus, a vehicula urna. Suspendisse felis sem, pharetra at mattis nec, gravida quis enim.
+
+                        Fusce cursus, felis non luctus pharetra, turpis leo tincidunt nulla, vitae volutpat sapien dui a
+                        sapien. Vestibulum id mauris quis dolor placerat congue eget eu tellus. Etiam scelerisque massa
+                        a purus accumsan convallis. Mauris semper accumsan est quis vestibulum. Sed imperdiet elit
+                        massa, sit amet tempus dui scelerisque nec. Vestibulum rhoncus nibh sem, ut tempor est aliquet
+                        lobortis. Praesent varius tortor ac ullamcorper volutpat. Fusce tristique eu tellus et tempor.
+                        Aliquam erat volutpat. Duis egestas sem et massa sagittis imperdiet vitae ac urna. In sit amet
+                        libero nulla. Proin vel arcu libero.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <a href="#"><img src="img/Addena.png" alt=" "></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a> Location</h4>
+                        <p>
+                            H.B. Twin Tower, 8th Floor Max Hospital Building, Netaji Subhash Place, Pitam Pura, Delhi,
+                            110034
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>More Info</h4>
+                        <p>
+                        <ul class="footer-links">
+                            <li><a href="tel:7838884977">Phone: 7838884977</a></li>
+                            <li><a href="support@ardennaimmigration.com">Email: support@ardennaimmigration.com</a></li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Get Social With Us</h4>
+                        <p>
+                        <ul class="social_links">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openEvent(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var content3 = document.getElementById("content3");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var content2_1 = document.getElementById("content2_1");
+        var content2_2 = document.getElementById("content2_2");
+        var content2_3 = document.getElementById("content2_3");
+        var btn2_1 = document.getElementById("btn2_1");
+        var btn2_2 = document.getElementById("btn2_2");
+        var btn3_3 = document.getElementById("btn2_3");
+
+        var content3_1 = document.getElementById("content3_1");
+        var content3_2 = document.getElementById("content3_2");
+        var content3_3 = document.getElementById("content3_3");
+        var btn3_1 = document.getElementById("btn3_1");
+        var btn3_2 = document.getElementById("btn3_2");
+        var btn3_3 = document.getElementById("btn3_3");
+
+        function OpenBtn1() {
+            content1.style.transform = "translateX(0%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            btn1.style.color = "#2b5a8f";
+            btn2.style.color = "grey";
+            btn3.style.color = "grey";
+            content1.style.transitionDelay = "0.3s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+        }
+        function OpenBtn2_1() {
+            content2_1.style.transform = "translateX(0%)";
+            content2_2.style.transform = "translateX(100%)";
+            content2_3.style.transform = "translateX(100%)";
+            btn2_1.style.color = "#2b5a8f";
+            btn2_2.style.color = "grey";
+            btn2_3.style.color = "grey";
+            content2_1.style.transitionDelay = "0.3s";
+            content2_2.style.transitionDelay = "0s";
+            content2_3.style.transitionDelay = "0s";
+        }
+
+        function OpenBtn2() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(0%)";
+            content3.style.transform = "translateX(100%)";
+            btn1.style.color = "grey";
+            btn2.style.color = "#2b5a8f";
+            btn3.style.color = "grey";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0.3s";
+            content3.style.transitionDelay = "0s";
+        }
+        function OpenBtn2_2() {
+            content2_1.style.transform = "translateX(100%)";
+            content2_2.style.transform = "translateX(0%)";
+            content2_3.style.transform = "translateX(100%)";
+            btn2_1.style.color = "grey";
+            btn2_2.style.color = "#2b5a8f";
+            btn2_3.style.color = "grey";
+            content2_1.style.transitionDelay = "0s";
+            content2_2.style.transitionDelay = "0.3s";
+            content2_3.style.transitionDelay = "0s";
+
+        }
+
+        function OpenBtn3() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(0%)";
+            btn1.style.color = "grey";
+            btn2.style.color = "grey";
+            btn3.style.color = "#2b5a8f";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0.3s";
+
+        }
+        function OpenBtn2_3() {
+            content2_1.style.transform = "translateX(100%)";
+            content2_2.style.transform = "translateX(100%)";
+            content2_3.style.transform = "translateX(0%)";
+            btn2_1.style.color = "grey";
+            btn2_2.style.color = "grey";
+            btn2_3.style.color = "#2b5a8f";
+            content2_1.style.transitionDelay = "0s";
+            content2_2.style.transitionDelay = "0s";
+            content2_3.style.transitionDelay = "0.3s";
+        }
+        function OpenBtn3_1() {
+            content3_1.style.transform = "translateX(0%)";
+            content3_2.style.transform = "translateX(100%)";
+            content3_3.style.transform = "translateX(100%)";
+            btn3_1.style.color = "#2b5a8f";
+            btn3_2.style.color = "grey";
+            btn3_3.style.color = "grey";
+            content3_1.style.transitionDelay = "0.3s";
+            content3_2.style.transitionDelay = "0s";
+            content3_3.style.transitionDelay = "0s";
+        }
+        function OpenBtn3_2() {
+            content3_1.style.transform = "translateX(100%)";
+            content3_2.style.transform = "translateX(0%)";
+            content3_3.style.transform = "translateX(100%)";
+            btn3_1.style.color = "grey";
+            btn3_2.style.color = "#2b5a8f";
+            btn3_3.style.color = "grey";
+            content3_1.style.transitionDelay = "0s";
+            content3_2.style.transitionDelay = "0.3s";
+            content3_3.style.transitionDelay = "0s";
+
+        }
+        function OpenBtn3_3() {
+            content3_1.style.transform = "translateX(100%)";
+            content3_2.style.transform = "translateX(100%)";
+            content3_3.style.transform = "translateX(0%)";
+            btn3_1.style.color = "grey";
+            btn3_2.style.color = "grey";
+            btn3_3.style.color = "#2b5a8f";
+            content3_1.style.transitionDelay = "0s";
+            content3_2.style.transitionDelay = "0s";
+            content3_3.style.transitionDelay = "0.3s";
+        }
+    </script>
+
+    <script>
+        function pop1(){
+             $("#score-pop1").css("display", "block");
+        }
+        $(".x").click(function () {
+                $("#score-pop1").css("display", "none");
+            });
+
+        
+    </script>
+    <!-- Firebase scripts -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
+    
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDXJL0qVGgTPpOhZfjJsa-Ne_dxjjWADH0",
+            authDomain: "authproject-47c88.firebaseapp.com",
+            databaseURL: "https://authproject-47c88.firebaseio.com",
+            projectId: "authproject-47c88",
+
+
+
+            storageBucket: "authproject-47c88.appspot.com",
+            messagingSenderId: "574637670882",
+            appId: "1:574637670882:web:cd78159e47083fe616f9bb",
+            measurementId: "G-RTCM2XQJ74",
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+
+
+            window.onload = function () {
+                render();
+            };
+            function render() {
+                window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
+                    "recaptcha-container"
+                );
+                recaptchaVerifier.render();
+            }
+            function phoneAuth() {
+                //get the number
+                var number = document.getElementById("phone").value;
+                //phone number authentication function of firebase
+                //it takes two parameter first one is number,,,second one is recaptcha
+                firebase
+                    .auth()
+                    .signInWithPhoneNumber(number, window.recaptchaVerifier)
+                    .then(function (confirmationResult) {
+                        //s is in lowercase
+                        window.confirmationResult = confirmationResult;
+                        coderesult = confirmationResult;
+                        console.log(coderesult);
+                        alert("Message sent");
+                    })
+                    .catch(function (error) {
+                        alert(error.message);
+                    });
+            }
+            function codeverify() {
+                var code = document.getElementById("verificationCode").value;
+
+                coderesult
+                    .confirm(code)
+                    .then(function (result) {
+                        formFill();
+                        alert("Successfully registered");
+                        var user = result.user;
+                        console.log(user);
+                    })
+                    .catch(function (error) {
+                        alert(error.message);
+                        console.log(error.message);
+                    });
+            }
+
+
+            function formFill() {
+                $("#contact-Form input:required").each(function () {
+                    if (this.value === "") {
+                        alert("Please fill all field");
+                    } else {
+                        $("#country_button").disabled = false;
+                    }
+                });
+            }
+
+            const database = firebase.database();
+            const rootRef4 = database.ref("Country_Data");
+            const country_name = document.getElementById("country_name");
+            const country_age = document.getElementById("country_age");
+            const country_exp = document.getElementById("country_exp");
+            const country_edu = document.getElementById("country_edu");
+            const country_disp = document.getElementById("country_disp");
+            const country_phone = document.getElementById("phone");
+            const country_city = document.getElementById("country_city");
+            const country_email = document.getElementById("country_email");
+            const country_button = document.getElementById("country_button");
+
+            country_button.addEventListener("click", (e) => {
+                e.preventDefault();
+                rootRef4.child(country_phone.value).set({
+                    Name: country_name.value,
+                    Age: country_age.value,
+                    Email: country_email.value,
+                    PhoneNumber: country_phone.value,
+                    Experience: country_exp.value,
+                    Education: country_edu.value,
+                    Discipline: country_disp.value,
+                    City: country_city.value,
+                    Country:"Canada",
+
+                });
+            });
+
+    </script>
+    
+</body>
+
+</html>

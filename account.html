@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./scss/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./scss/main.css">
+   
+</head>
+
+<style>
+    .container{
+        max-width:800px;
+    }
+  
+</style>
+
+
+<body>
+<nav>
+  <div class="logo"></div>
+  <label for="btn" class="icon">
+    <span class="fa fa-bars"></span>
+  </label>
+  <input type="checkbox" id="btn">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>
+      <label for="btn-1" class="show">Study Abroad <i class="fas fa-caret-down"></i> </label>
+      <a href="#">Study Abroad <i class="fas fa-caret-down"></i></a>
+      <input type="checkbox" id="btn-1">
+      <ul>
+        <li><a href="canada.html">Canada</a></li>
+        <li><a href="europe.html">E.U.</a></li>
+        <li><a href="UK.html">U.K.</a></li>
+        <li><a href="australia.html">Australia</a></li>
+        <li><a href="newzealand.html">New Zeland</a></li>
+
+
+      </ul>
+    </li>
+    <li><a href="permanent-residence.html">Permanent Residance</i></a>
+    </li>
+    <li><a href="jobseeker.html">Job Seeker</a></li>
+    <li><a href="IELTS.html">IELTS</a></li>
+    <li><a href="account.html">Sign In</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+    <section class="" id="contact" style="width: 100%;padding-top: 100px;">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Sign Up</h2>
+                
+            </div>
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-12 text-center">
+                        <div class="form-group">
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *"
+                                required="required" data-validation-required-message="Please enter your name." />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                                required="required"
+                                data-validation-required-message="Please enter your email address." />
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-control" id="password" type="password" placeholder="Your Password *"
+                                required="required" data-validation-required-message="Please enter your password." />
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="form-group mb-md-0">
+                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                                required="required"
+                                data-validation-required-message="Please enter your phone number." />
+                            <p class="help-block text-danger"></p>
+                            <br />
+                        </div>
+
+                        <form>
+                            <div class="form-group mb-md-0" id="recaptcha-container"></div>
+                            <button class="btn btn-primary btn-md text-uppercase" type="button" onclick="phoneAuth(); " style="background-color:#2b5a8f">
+                                SendCode
+                            </button >
+                            <br />
+                        </form>
+
+                        <form>
+                            <br />
+                            <input class="form-control" type="text" id="verificationCode"
+                                placeholder="Enter verification code" />
+
+                            <button class="btn btn-primary btn-md text-uppercase" id="verifyButton" type="button"
+                                onclick="codeverify();" style="background-color:#2b5a8f">
+                                Verify code
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="text-center">
+                    <div id="success"></div>
+                    <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit"
+                        onclick="window.location.href='index.html'" disabled style="background-color:#2b5a8f" >
+                        Sign Up
+                    </button>
+                </div>
+            </form>
+        </div>
+</section>
+
+        <!-- Firebase scripts -->
+        <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
+
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyDXJL0qVGgTPpOhZfjJsa-Ne_dxjjWADH0",
+                authDomain: "authproject-47c88.firebaseapp.com",
+                databaseURL: "https://authproject-47c88.firebaseio.com",
+                projectId: "authproject-47c88",
+
+
+
+                storageBucket: "authproject-47c88.appspot.com",
+                messagingSenderId: "574637670882",
+                appId: "1:574637670882:web:cd78159e47083fe616f9bb",
+                measurementId: "G-RTCM2XQJ74",
+            };
+
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./script/signup.js"></script>
+</body>
+
+</html>

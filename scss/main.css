@@ -10204,15 +10204,15 @@ ul.social-network li {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #34374c;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(107, 104, 104);
+  background:#ee2b47;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #be272c;
 }
 /* --------------------------------------- */
 a.filled-button {
@@ -10228,7 +10228,7 @@ a.filled-button {
 }
 
 a.filled-button:hover {
-  background-color: #white;
+  background-color: white;
   color: #2c2e3e;
 }
 

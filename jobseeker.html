@@ -53,6 +53,138 @@
         </ul>
     </nav>
 
+<div class="container" id="score-pop1" style="display: none; ">
+    <div id="popup1"
+        style="overflow-y: scroll; overflow-x: hidden;max-width:550px; height: 587px; position: relative; ">
+        <div class="row">
+            <div style="margin-right: -30px;">
+                <div class="well well-sm" style="background-color:#2c2e3e; margin-bottom:0px; ">
+
+
+                    <form id="contact-form" style="width:100%;">
+                        <div class="row">
+
+
+
+                            <h2 style="color:#ee2b47; font-size: 40px; padding-bottom:30px; display: inline-block;">
+                                <strong style="color:#f6f6f6"> Check Your <span style="color:#ee2b47">Eligibility</span> </strong> </h2>
+                            <div class="x-touch"
+                                onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
+                                <div class="x">
+                                    <div class="line1"></div>
+                                    <div class="line2"></div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                            <div class="form-group items">
+                                <input id="JS_name" type="name" placeholder="Enter Name" required="" autofocus=""
+                                    class="form-control rounded-pill border-0 shadow-sm px-4">
+                            </div>
+
+
+                            <div class="form-group items">
+                                <input id="JS_age" type="number" placeholder="Enter age" required="" autofocus=""
+                                    class="form-control rounded-pill border-0 shadow-sm px-4">
+                            </div>
+
+                            <div class="form-group items">
+                                <select id="JS_exp" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    <option value="Null">Experience</option>
+                                    <option value="0-1 year" rel="icon-temperature">0-1 year</option>
+                                    <option value="1-2 year">1-2 year</option>
+                                    <option value="2-3 year">2-3 year</option>
+
+
+                                </select>
+                            </div>
+
+
+                            <div class="form-group items">
+                                <select id="JS_edu" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    <option value="Null">Education</option>
+                                    <option value="12th" rel="icon-temperature">12th</option>
+                                    <option value="Graduation">Graduation</option>
+                                    <option value="Post Graduation">Post Graduation</option>
+                                    <option value="Masters">Masters</option>
+                                    <option value="PHD">PHD</option>
+
+                                </select>
+                            </div>
+
+                            <div class="form-group items">
+                                <input id="JS_ocu" type="text" placeholder="Enter Occupation" required="" autofocus=""
+                                    class="form-control rounded-pill border-0 shadow-sm px-4">
+                            </div>
+
+                            <!-- <div class="form-group items">
+                                <input id="JS_phone" type="number" placeholder="Enter Phone No" required="" autofocus=""
+                                    class="form-control rounded-pill border-0 shadow-sm px-4">
+                            </div> -->
+
+
+                            <div class="form-group mb-md-0 items">
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                                    required="required"
+                                    data-validation-required-message="Please enter your phone number." />
+                                <p class="help-block text-danger"></p>
+
+                            </div>
+
+                            <form>
+                                <div class="form-group mb-md-0 items" id="recaptcha-container"
+                                    style="margin-bottom:0; margin-left:40px; "></div>
+                                <button class="btn btn-primary btn-md text-uppercase" type="button"
+                                    onclick="phoneAuth(); "
+                                    style="background-color:#ee2b47; margin-top:10px; margin-bottom:10px; width:120px; border-radius: 10px;">
+                                    Send Code
+                                </button>
+
+                            </form>
+
+
+
+                            <form class="items">
+
+                                <input class="form-control " type="text" id="verificationCode"
+                                    placeholder="Enter verification code" />
+
+                                <button class="btn btn-primary btn-md text-uppercase" id="verifyButton" type="button"
+                                    onclick="codeverify();"
+                                    style="background-color:#ee2b47; margin-top:10px; margin-bottom:10px; width:120px; margin-left:5px; border-radius: 10px;">
+                                    Verify code
+                                </button>
+                            </form>
+
+                            <div class="form-group items">
+                                <input id="JS_city" type="text" placeholder="Enter City" required="" autofocus=""
+                                    class="form-control rounded-pill border-0 shadow-sm px-4">
+                            </div>
+
+                            <div class="form-group items">
+                                <input id="JS_email" type="email" placeholder="Enter Email" required=""
+                                    autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary " id="JS_button"
+                                    style="background-color:#ee2b47; border-radius: 10px; margin-left:-6px; width:120px;">SUBMIT</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <div class="country-image">
 
         <img src="./images/germany-visa.jpg" style="width:100%; height:500px;">
@@ -74,7 +206,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <img src="https://monet-prtl-co.imgix.net/Shared/BestFit/bestfit_banner_desktop.svg" alt="">
-                <a style="margin-left:3%;" href="" class="filled-button">Check Your Score</a>
+                <a style="margin-left:3%;" onclick="pop1()" class="filled-button">Check Your Eligibility</a>
 
             </div>
         </div>
@@ -463,6 +595,129 @@
             content3_2.style.transitionDelay = "0s";
             content3_3.style.transitionDelay = "0.3s";
         }
+    </script>
+    <script>
+        function pop1() {
+            $("#score-pop1").css("display", "block");
+        }
+        $(".x").click(function () {
+            $("#score-pop1").css("display", "none");
+        });
+
+
+    </script>
+    <!-- Firebase scripts -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
+    
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDXJL0qVGgTPpOhZfjJsa-Ne_dxjjWADH0",
+            authDomain: "authproject-47c88.firebaseapp.com",
+            databaseURL: "https://authproject-47c88.firebaseio.com",
+            projectId: "authproject-47c88",
+
+
+
+            storageBucket: "authproject-47c88.appspot.com",
+            messagingSenderId: "574637670882",
+            appId: "1:574637670882:web:cd78159e47083fe616f9bb",
+            measurementId: "G-RTCM2XQJ74",
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+
+
+        window.onload = function () {
+            render();
+        };
+        function render() {
+            window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
+                "recaptcha-container"
+            );
+            recaptchaVerifier.render();
+        }
+        function phoneAuth() {
+            //get the number
+            var number = document.getElementById("phone").value;
+            //phone number authentication function of firebase
+            //it takes two parameter first one is number,,,second one is recaptcha
+            firebase
+                .auth()
+                .signInWithPhoneNumber(number, window.recaptchaVerifier)
+                .then(function (confirmationResult) {
+                    //s is in lowercase
+                    window.confirmationResult = confirmationResult;
+                    coderesult = confirmationResult;
+                    console.log(coderesult);
+                    alert("Message sent");
+                })
+                .catch(function (error) {
+                    alert(error.message);
+                });
+        }
+        function codeverify() {
+            var code = document.getElementById("verificationCode").value;
+
+            coderesult
+                .confirm(code)
+                .then(function (result) {
+                    formFill();
+                    alert("Successfully registered");
+                    var user = result.user;
+                    console.log(user);
+                })
+                .catch(function (error) {
+                    alert(error.message);
+                    console.log(error.message);
+                });
+        }
+
+
+        function formFill() {
+            $("#contact-Form input:required").each(function () {
+                if (this.value === "") {
+                    alert("Please fill all field");
+                } else {
+                    $("#JS_button").disabled = false;
+                }
+            });
+        }
+
+        const database = firebase.database();
+        const rootRef4 = database.ref("JS_Data");
+        const JS_name = document.getElementById("JS_name");
+        const JS_age = document.getElementById("JS_age");
+        const JS_exp = document.getElementById("JS_exp");
+        const JS_edu = document.getElementById("JS_edu");
+         const JS_ocu = document.getElementById("JS_ocu");
+       
+        const JS_phone = document.getElementById("phone");
+        const JS_city = document.getElementById("JS_city");
+        const JS_email = document.getElementById("JS_email");
+        const JS_button = document.getElementById("JS_button");
+
+        JS_button.addEventListener("click", (e) => {
+            e.preventDefault();
+            rootRef4.child(JS_phone.value).set({
+                Name: JS_name.value,
+                Age: JS_age.value,
+                Email: JS_email.value,
+                PhoneNumber: JS_phone.value,
+                Experience: JS_exp.value,
+                Education: JS_edu.value,
+                Occupation: JS_ocu.value,
+                City: JS_city.value,
+                
+
+            });
+        });
+
     </script>
 </body>
 

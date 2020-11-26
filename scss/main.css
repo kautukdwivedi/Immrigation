@@ -9922,17 +9922,35 @@ input {
 #btn1 {
   color: #ee2b47;
 }
+#btn2{
+  color:white;
+}
+#btn3{
+  color:white;
+}
 #content2_1 {
   transform: translateX(0%);
 }
 #btn2_1 {
   color: #ee2b47;
 }
+#btn2_2{
+  color:white;
+}
+#btn2_3{
+  color:white;
+}
 #content3_1 {
   transform: translateX(0%);
 }
 #btn3_1 {
   color: #ee2b47;
+}
+#btn3_2{
+  color: white;
+}
+#btn3_3{
+  color:white;
 }
 .Tabs img {
   transition: box-shadow 0.5s;

@@ -20,10 +20,14 @@
 
 <style>
     #PR_cat{
-        padding-left:40%;
-        background-color: #1966bf;
+
+ padding-left:40%;
+        background-color:#ee2b47;
         color:white;
-    }
+     }
+     option{
+         background-color: #2c2e3e;
+     }
     
 </style>
 
@@ -63,19 +67,20 @@
 
 
     <div class="container" id="score-pop1" style="display: none; ">
-        <div id="popup1">
+        <div id="popup1"
+            style="overflow-y: scroll; overflow-x: hidden;max-width:550px; height: 587px; position: relative; ">
             <div class="row">
-                <div class="col-md-8">
-                    <div class="well well-sm" style="background-color:#2b5a8f; margin-bottom:0px; ">
-
-
-                        <form id="contact-form">
+                <div style="margin-right: -30px;">
+                    <div class="well well-sm" style="background-color:#2c2e3e; margin-bottom:0px; ">
+    
+    
+                        <form id="contact-form" style="width:100%;">
                             <div class="row">
-
-
-
-                                <h2 style="color:white; padding-bottom:30px; display: inline-block;"> <strong> Check
-                                        Your Score</strong> </h2>
+    
+    
+    
+                                <h2 style="color:#ee2b47; font-size: 40px; padding-bottom:30px; display: inline-block;">
+                                    <strong> Check Your Score</strong> </h2>
                                 <div class="x-touch"
                                     onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
                                     <div class="x">
@@ -83,40 +88,46 @@
                                         <div class="line2"></div>
                                     </div>
                                 </div>
-
-
+    
+    
+    
                                 <div class="form-group items">
                                     <select id="PR_cat" class="form-control rounded-pill border-0 shadow-sm px-4">
-                                        <option value="Skilled" >Skilled</option>
+                                        
+                                        <option value="Skilled">Skilled</option>
                                         <option value="LMIA">LMIA</option>
-                                        <option value="Business" >Business</option>
-
+                                        <option value="Business">Business</option>
+    
+    
+    
                                     </select>
                                 </div>
-
+    
+    
+    
                                 <div class="form-group items">
-                                    <input id="PR_name" type="name" placeholder="Enter Name" required=""
-                                        autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    <input id="PR_name" type="name" placeholder="Enter Name" required="" autofocus=""
+                                        class="form-control rounded-pill border-0 shadow-sm px-4">
                                 </div>
-
-
+    
+    
                                 <div class="form-group items">
-                                    <input id="PR_age" type="number" placeholder="Enter age" required=""
-                                        autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    <input id="PR_age" type="number" placeholder="Enter age" required="" autofocus=""
+                                        class="form-control rounded-pill border-0 shadow-sm px-4">
                                 </div>
-
+    
                                 <div class="form-group items">
                                     <select id="PR_exp" class="form-control rounded-pill border-0 shadow-sm px-4">
                                         <option value="Null">Experience</option>
                                         <option value="0-1 year" rel="icon-temperature">0-1 year</option>
                                         <option value="1-2 year">1-2 year</option>
                                         <option value="2-3 year">2-3 year</option>
-
-
+    
+    
                                     </select>
                                 </div>
-
-
+    
+    
                                 <div class="form-group items">
                                     <select id="PR_edu" class="form-control rounded-pill border-0 shadow-sm px-4">
                                         <option value="Null">Education</option>
@@ -125,57 +136,67 @@
                                         <option value="Post Graduation">Post Graduation</option>
                                         <option value="Masters">Masters</option>
                                         <option value="PHD">PHD</option>
-
+    
                                     </select>
                                 </div>
-
+    
                                 
+    
+                                <!-- <div class="form-group items">
+                                <input id="PR_phone" type="number" placeholder="Enter Phone No" required="" autofocus=""
+                                    class="form-control rounded-pill border-0 shadow-sm px-4">
+                            </div> -->
+    
+    
                                 <div class="form-group mb-md-0 items">
                                     <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
                                         required="required"
                                         data-validation-required-message="Please enter your phone number." />
                                     <p class="help-block text-danger"></p>
-
+    
                                 </div>
-
+    
                                 <form>
                                     <div class="form-group mb-md-0 items" id="recaptcha-container"
-                                        style="margin-bottom:0;"></div>
+                                        style="margin-bottom:0; margin-left:40px; "></div>
                                     <button class="btn btn-primary btn-md text-uppercase" type="button"
-                                        onclick="phoneAuth(); " style="background-color:#2b5a8f">
-                                        SendCode
+                                        onclick="phoneAuth(); "
+                                        style="background-color:#ee2b47; margin-top:10px; margin-bottom:10px; width:120px; border-radius: 10px;">
+                                        Send Code
                                     </button>
-
+    
                                 </form>
-
-
-
+    
+    
+    
                                 <form class="items">
-
+    
                                     <input class="form-control " type="text" id="verificationCode"
                                         placeholder="Enter verification code" />
-
-                                    <button class="btn btn-primary btn-md text-uppercase" id="verifyButton"
-                                        type="button" onclick="codeverify();" style="background-color:#2b5a8f">
+    
+                                    <button class="btn btn-primary btn-md text-uppercase" id="verifyButton" type="button"
+                                        onclick="codeverify();"
+                                        style="background-color:#ee2b47; margin-top:10px; margin-bottom:10px; width:120px; margin-left:5px; border-radius: 10px;">
                                         Verify code
                                     </button>
                                 </form>
-
+    
                                 <div class="form-group items">
-                                    <input id="PR_city" type="text" placeholder="Enter City" required=""
-                                        autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    <input id="PR_city" type="text" placeholder="Enter City" required="" autofocus=""
+                                        class="form-control rounded-pill border-0 shadow-sm px-4">
                                 </div>
-
+    
                                 <div class="form-group items">
                                     <input id="PR_email" type="email" placeholder="Enter Email" required=""
                                         autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
                                 </div>
-
-
+    
+    
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary " id="PR_button">Submit</button>
+                                    <button type="submit" class="btn btn-primary " id="PR_button"
+                                        style="background-color:#ee2b47; border-radius: 10px; margin-left:-6px; width:120px;">SUBMIT</button>
                                 </div>
-
+    
                             </div>
                         </form>
                     </div>

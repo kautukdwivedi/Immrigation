@@ -20,8 +20,11 @@
      #name_of_country{
 
  padding-left:40%;
-        background-color: #1966bf;
+        background-color:#ee2b47;
         color:white;
+     }
+     option{
+         background-color: #2c2e3e;
      }
  </style>
 
@@ -59,175 +62,170 @@
 </nav>
 
 <div class="container" id="score-pop1" style="display: none; ">
-    <div id="popup1">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="well well-sm" style="background-color:#2b5a8f; margin-bottom:0px; ">
+        <div id="popup1" style="overflow-y: scroll; overflow-x: hidden;max-width:550px; height: 587px; position: relative; ">
+            <div class="row" >
+                <div style="margin-right: -30px;">
+                    <div class="well well-sm" style="background-color:#2c2e3e; margin-bottom:0px; ">
+                        
+
+                        <form id="contact-form" style="width:100%;">
+                            <div class="row" >
+
+                                
+
+                                    <h2 style="color:#ee2b47; font-size: 40px; padding-bottom:30px; display: inline-block;"> <strong> Check Your Score</strong> </h2>
+                                    <div class="x-touch" onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
+                                        <div class="x">
+                                            <div class="line1"></div>
+                                            <div class="line2"></div>
+                                        </div>
+                                    </div>
+                                
 
 
-                    <form id="contact-form">
-                        <div class="row">
-
-
-
-                            <h2 style="color:white; padding-bottom:30px; display: inline-block;"> <strong> Check Your
-                                    Score</strong> </h2>
-                            <div class="x-touch"
-                                onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
-                                <div class="x">
-                                    <div class="line1"></div>
-                                    <div class="line2"></div>
-                                </div>
-                            </div>
-
-
-
-
-
-
-
-                            <div class="form-group items" >
-                                <select id="name_of_country" class="form-control rounded-pill border-0 shadow-sm px-4" >
-                                    <option value="Null">Country</option>
-                                    <option value="Austria" rel="icon-temperature">Austria</option>
-                                    <option value="Belgium">Belgium</option>
-                                    <option value="Bulgaria">Bulgaria</option>
-                                    <option value="Croatia">Croatia</option>
-                                    <option value="Cyprus">Cyprus</option>
-                                    <option value="Czechia">Czechia</option>
-                                    <option value="Denmark">Denmark</option>
-                                    <option value="Estonia">Estonia</option>
-                                    <option value="Finland">Finland</option>
-                                    <option value="France">France</option>
-                                    <option value="Germany">Germany</option>
-                                    <option value="Greece">Greece</option>
+                                    <div class="form-group items">
+                                        <select id="name_of_country" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                            <option value="Null" >Country</option>
+                                            <option value="Austria" rel="icon-temperature">Austria</option>
+                                            <option value="Belgium">Belgium</option>
+                                            <option value="Bulgaria">Bulgaria</option>
+                                            <option value="Croatia">Croatia</option>
+                                            <option value="Cyprus">Cyprus</option>
+                                            <option value="Czechia">Czechia</option>
+                                            <option value="Denmark">Denmark</option>
+                                            <option value="Estonia">Estonia</option>
+                                            <option value="Finland">Finland</option>
+                                            <option value="France">France</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="Greece">Greece</option>
                                     
-
-                            
-                                </select>
-                            </div>
-
-                            <div class="form-group items">
-                                <input id="country_name" type="name" placeholder="Enter Name" required="" autofocus=""
-                                    class="form-control rounded-pill border-0 shadow-sm px-4">
-                            </div>
+                                    
+                                    
+                                        </select>
+                                    </div>
 
 
-                            <div class="form-group items">
-                                <input id="country_age" type="number" placeholder="Enter age" required="" autofocus=""
-                                    class="form-control rounded-pill border-0 shadow-sm px-4">
-                            </div>
 
-                            <div class="form-group items">
-                                <select id="country_exp" class="form-control rounded-pill border-0 shadow-sm px-4">
-                                    <option value="Null">Experience</option>
-                                    <option value="0-1 year" rel="icon-temperature">0-1 year</option>
-                                    <option value="1-2 year">1-2 year</option>
-                                    <option value="2-3 year">2-3 year</option>
+                                <div class="form-group items">
+                                    <input id="country_name" type="name" placeholder="Enter Name" required=""
+                                        autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                </div>
 
 
-                                </select>
-                            </div>
+                                <div class="form-group items">
+                                    <input id="country_age" type="number" placeholder="Enter age" required=""
+                                        autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                </div>
+
+                                <div class="form-group items">
+                                    <select id="country_exp" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                        <option value="Null">Experience</option>
+                                        <option value="0-1 year" rel="icon-temperature">0-1 year</option>
+                                        <option value="1-2 year">1-2 year</option>
+                                        <option value="2-3 year">2-3 year</option>
 
 
-                            <div class="form-group items">
-                                <select id="country_edu" class="form-control rounded-pill border-0 shadow-sm px-4">
-                                    <option value="Null">Education</option>
-                                    <option value="12th" rel="icon-temperature">12th</option>
-                                    <option value="Graduation">Graduation</option>
-                                    <option value="Post Graduation">Post Graduation</option>
-                                    <option value="Masters">Masters</option>
-                                    <option value="PHD">PHD</option>
+                                    </select>
+                                </div>
 
-                                </select>
-                            </div>
 
-                            <div class="form-group items">
-                                <select id="country_disp" class="form-control rounded-pill border-0 shadow-sm px-4">
-                                    <option value="Null">Disciplines</option>
-                                    <option value="Education" rel="icon-temperature">Education</option>
-                                    <option value="Agriculture & Forestry">Agriculture & Forestry</option>
-                                    <option value="Applied Sciences & Professions">Applied Sciences & Professions
-                                    </option>
-                                    <option value="Arts, Design & Architecture">Arts, Design & Architecture</option>
-                                    <option value="Business & Management">Business & Management</option>
-                                    <option value="Computer Science & IT">Computer Science & IT</option>
-                                    <option value="Education & Training">Education & Training</option>
-                                    <option value="Engineering & Technology">Engineering & Technology</option>
-                                    <option value="Environmental Science & Earth Sciences">Environmental Science &
-                                        Earth Sciences</option>
-                                    <option value="Hospitality, Leisure & Sports">Hospitality, Leisure & Sports
-                                    </option>
-                                    <option value="Humanities">Humanities</option>
-                                    <option value="Journalism & Media">Journalism & Media</option>
-                                    <option value="Law">Law</option>
-                                    <option value="Medicine & Health">Medicine & Health</option>
-                                    <option value="Natural Sciences & Mathematics">Natural Sciences & Mathematics
-                                    </option>
-                                    <option value="Social Science">Social Science</option>
+                                <div class="form-group items">
+                                    <select id="country_edu" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                        <option value="Null">Education</option>
+                                        <option value="12th" rel="icon-temperature">12th</option>
+                                        <option value="Graduation">Graduation</option>
+                                        <option value="Post Graduation">Post Graduation</option>
+                                        <option value="Masters">Masters</option>
+                                        <option value="PHD">PHD</option>
 
-                                </select>
-                            </div>
+                                    </select>
+                                </div>
 
-                            <!-- <div class="form-group items">
+                                <div class="form-group items">
+                                    <select id="country_disp" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                        <option value="Null">Disciplines</option>
+                                        <option value="Education" rel="icon-temperature">Education</option>
+                                        <option value="Agriculture & Forestry">Agriculture & Forestry</option>
+                                        <option value="Applied Sciences & Professions">Applied Sciences & Professions
+                                        </option>
+                                        <option value="Arts, Design & Architecture">Arts, Design & Architecture</option>
+                                        <option value="Business & Management">Business & Management</option>
+                                        <option value="Computer Science & IT">Computer Science & IT</option>
+                                        <option value="Education & Training">Education & Training</option>
+                                        <option value="Engineering & Technology">Engineering & Technology</option>
+                                        <option value="Environmental Science & Earth Sciences">Environmental Science &
+                                            Earth Sciences</option>
+                                        <option value="Hospitality, Leisure & Sports">Hospitality, Leisure & Sports
+                                        </option>
+                                        <option value="Humanities">Humanities</option>
+                                        <option value="Journalism & Media">Journalism & Media</option>
+                                        <option value="Law">Law</option>
+                                        <option value="Medicine & Health">Medicine & Health</option>
+                                        <option value="Natural Sciences & Mathematics">Natural Sciences & Mathematics
+                                        </option>
+                                        <option value="Social Science">Social Science</option>
+
+                                    </select>
+                                </div>
+
+                                <!-- <div class="form-group items">
                             <input id="country_phone" type="number" placeholder="Enter Phone No" required="" autofocus=""
                                 class="form-control rounded-pill border-0 shadow-sm px-4">
                         </div> -->
 
 
-                            <div class="form-group mb-md-0 items">
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
-                                    required="required"
-                                    data-validation-required-message="Please enter your phone number." />
-                                <p class="help-block text-danger"></p>
+                                <div class="form-group mb-md-0 items">
+                                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                                        required="required"
+                                        data-validation-required-message="Please enter your phone number." />
+                                    <p class="help-block text-danger"></p>
 
-                            </div>
-
-                            <form>
-                                <div class="form-group mb-md-0 items" id="recaptcha-container" style="margin-bottom:0;">
                                 </div>
-                                <button class="btn btn-primary btn-md text-uppercase" type="button"
-                                    onclick="phoneAuth(); " style="background-color:#2b5a8f">
-                                    SendCode
-                                </button>
 
-                            </form>
+                                <form>
+                                    <div class="form-group mb-md-0 items" id="recaptcha-container" style="margin-bottom:0; margin-left:40px; "></div>
+                                    <button class="btn btn-primary btn-md text-uppercase" type="button"
+                                        onclick="phoneAuth(); " style="background-color:#ee2b47; margin-top:10px; margin-bottom:10px; width:120px; border-radius: 10px;">
+                                        Send Code
+                                    </button>
+
+                                </form>
 
 
 
-                            <form class="items">
+                                <form class="items" >
+                                    
+                                    <input class="form-control " type="text" id="verificationCode" 
+                                        placeholder="Enter verification code" />
 
-                                <input class="form-control " type="text" id="verificationCode"
-                                    placeholder="Enter verification code" />
+                                    <button class="btn btn-primary btn-md text-uppercase" id="verifyButton"
+                                        type="button" onclick="codeverify();" style="background-color:#ee2b47; margin-top:10px; margin-bottom:10px; width:120px; margin-left:5px; border-radius: 10px;">
+                                        Verify code
+                                    </button>
+                                </form>
 
-                                <button class="btn btn-primary btn-md text-uppercase" id="verifyButton" type="button"
-                                    onclick="codeverify();" style="background-color:#2b5a8f">
-                                    Verify code
-                                </button>
-                            </form>
+                                <div class="form-group items">
+                                    <input id="country_city" type="text" placeholder="Enter City" required=""
+                                        autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                </div>
 
-                            <div class="form-group items">
-                                <input id="country_city" type="text" placeholder="Enter City" required="" autofocus=""
-                                    class="form-control rounded-pill border-0 shadow-sm px-4">
+                                <div class="form-group items">
+                                    <input id="country_email" type="email" placeholder="Enter Email" required=""
+                                        autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                </div>
+
+
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary " id="country_button" style="background-color:#ee2b47; border-radius: 10px; margin-left:-6px; width:120px;">SUBMIT</button>
+                                </div>
+
                             </div>
-
-                            <div class="form-group items">
-                                <input id="country_email" type="email" placeholder="Enter Email" required=""
-                                    autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
-                            </div>
-
-
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary " id="country_button">Submit</button>
-                            </div>
-
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <div class="country-image">
 

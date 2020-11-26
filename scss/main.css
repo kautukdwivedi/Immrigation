@@ -6782,7 +6782,7 @@ body #features-page .subsection3 .right-section,
 body #features-page .subsection3 .left-section,
 body #features-page .subsection4,
 body #login-reg {
-  padding: 50px 0px;
+  padding: 20px 0px;
   display: block;
 }
 body .section-heading h1,
@@ -8704,20 +8704,19 @@ body #contact {
   background-size: cover;
 }
 body #contact .map-content {
-  margin-top: 45px;
+  margin-top: 0px;
 }
 body #contact .gmap {
   border: 10px solid #f6f5f0;
-  border-radius: 50%;
+  border-radius: 3%;
   height: 450px;
   width: 450px;
   box-shadow: 0px 0px 3px 3px #e7e4dc;
   overflow: hidden;
   position: relative;
-  margin: 0px auto;
+  margin: 35px auto;
 }
 body #contact .gmap-area .gmap iframe {
-  border-radius: 50%;
   height: 430px;
   width: 430px;
 }
@@ -9777,8 +9776,10 @@ input {
 }
 .tabs .tab-header .color {
   color: white;
+  font-size:14px ;
   font-weight: bold;
 }
+
 .tabs .tab-header > div {
   height: 50px;
   line-height: 50px;
@@ -9787,10 +9788,10 @@ input {
   color: rgb(7, 2, 2);
   cursor: pointer;
 }
-.tabs .tab-header > div:hover,
+.tabs .tab-header > div:hover
 .tabs .tab-header > div.active {
   font-weight: bold;
-  color: #ea041b;
+  color: #f6f6f6;
 }
 .tabs .tab-header div i {
   display: inline-block;

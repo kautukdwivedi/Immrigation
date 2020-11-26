@@ -9863,7 +9863,7 @@ input {
 .Tabs button {
   display: block;
   background-color: transparent;
-  color: black;
+  color: #f6f6f6;
   padding: 22px 16px;
   width: 100%;
   border: none;
@@ -9878,8 +9878,8 @@ input {
   background-color: rgb(176, 215, 225);
 } */
 .Tabs button.active {
-  background-color: rgb(176, 215, 225);
-  border-right: 8px solid #2b5a8f;
+  background-color: #ee2b47;
+  border-right: 8px solid #ee2b47;
 }
 .hero {
   width: 100%;
@@ -9887,6 +9887,9 @@ input {
   position: relative;
   margin: auto;
   overflow: hidden;
+}
+.hero p{
+  color:#f6f6f6
 }
 .btn_box {
   padding-left: 25%;
@@ -10224,7 +10227,7 @@ a.filled-button {
 }
 
 a.filled-button:hover {
-  background-color: #f6f6f6;
+  background-color: #white;
   color: #2c2e3e;
 }
 

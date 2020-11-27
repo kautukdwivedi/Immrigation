@@ -10127,6 +10127,12 @@ footer a:hover {
   color: white;
 }
 
+@media only screen and (max-width: 970px) {
+  .footer-hide {
+    display: none;
+  }
+}
+
 /*SOCİAL İCONS*/
 
 /* footer social icons */
@@ -10216,7 +10222,7 @@ ul.social-network li {
 }
 
 ::-webkit-scrollbar-thumb {
-  background:#ee2b47;
+  background: #ee2b47;
 }
 
 ::-webkit-scrollbar-thumb:hover {

@@ -9924,39 +9924,45 @@ input {
 }
 #btn1 {
   color: #ee2b47;
-  font-size: 20px;
+  font-size: 18px;
 }
 #btn2 {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 #btn3 {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 #content2_1 {
   transform: translateX(0%);
 }
 #btn2_1 {
   color: #ee2b47;
+  font-size: 18px;
 }
 #btn2_2 {
   color: white;
+  font-size: 18px;
 }
 #btn2_3 {
   color: white;
+  font-size: 18px;
 }
 #content3_1 {
   transform: translateX(0%);
 }
 #btn3_1 {
   color: #ee2b47;
+  font-size: 18px;
 }
 #btn3_2 {
   color: white;
+  font-size: 18px;
 }
 #btn3_3 {
   color: white;
+  font-size: 18px;
 }
 .Tabs img {
   transition: box-shadow 0.5s;

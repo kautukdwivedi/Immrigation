@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Europe</title>
+    <title>USA</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/8af8eddf83.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./scss/main.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="./script/index.js"></script>
@@ -16,111 +17,75 @@
     <script src="./script/bot.js"></script>
     <!-- End of Async Drift Code -->
 </head>
- <style>
-     #name_of_country{
 
- padding-left:40%;
-        background-color:#ee2b47;
-        color:white;
-     }
-     option{
-         background-color: #2c2e3e;
-     }
- </style>
+<style>
+    button {
+        width: 150px;
+    }
+</style>
 
 <body>
 
-<nav>
-    <div class="logo"><img src="img/logo.png"></div>
-    <label for="btn" class="icon">
-        <span class="fa fa-bars"></span>
-    </label>
-    <input type="checkbox" id="btn">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>
-            <label for="btn-1" class="show">Study Abroad <i class="fas fa-caret-down"></i> </label>
-            <a href="#">Study Abroad <i class="fas fa-caret-down"></i></a>
-            <input type="checkbox" id="btn-1">
-            <ul class="only_color">
-                <li><a href="canada.html">Canada</a></li>
-                <li><a href="europe.html">E.U.</a></li>
-                <li><a href="UK.html">U.K.</a></li>
-                <li><a href="australia.html">Australia</a></li>
-                <li><a href="newzealand.html">New Zeland</a></li>
-                <li><a href="usa.html">USA</a></li>
+
+    <nav>
+        <div class="logo"><img src="img/logo.png"></div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <label for="btn-1" class="show">Study Abroad <i class="fas fa-caret-down"></i> </label>
+                <a href="#">Study Abroad <i class="fas fa-caret-down"></i></a>
+                <input type="checkbox" id="btn-1">
+                <ul class="only_color">
+                    <li><a href="canada.html">Canada</a></li>
+                    <li><a href="europe.html">Europe</a></li>
+                    <li><a href="UK.html">U.K.</a></li>
+                    <li><a href="australia.html">Australia</a></li>
+                    <li><a href="newzealand.html">New Zeland</a></li>
+                    <li><a href="usa.html">USA</a></li>
 
 
-            </ul>
-        </li>
-        <li><a href="permanent-residence.html">Permanent Residance</i></a>
-        </li>
-        <li><a href="jobseeker.html">Job Seeker</a></li>
-        <li><a href="IELTS.html">IELTS</a></li>
-        
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+                </ul>
+            </li>
+            <li><a href="permanent-residence.html">Permanent Residance</i></a>
+            </li>
+            <li><a href="jobseeker.html">Job Seeker</a></li>
+            <li><a href="IELTS.html">IELTS</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
-<div class="container" id="score-pop1" style="display: none; ">
-        <div id="popup1" style="overflow-y: scroll; overflow-x: hidden;max-width:550px; height: 587px; position: relative; ">
-            <div class="row" >
+        </ul>
+    </nav>
+
+    <div class="container" id="score-pop1" style="display: none; ">
+        <div id="popup1"
+            style="overflow-y: scroll; overflow-x: hidden;max-width:550px; height: 587px; position: relative; ">
+            <div class="row">
                 <div style="margin-right: -30px;">
                     <div class="well well-sm" style="background-color:#2c2e3e; margin-bottom:0px; ">
-                        
+
 
                         <form id="contact-form" style="width:100%;">
-                            <div class="row" >
+                            <div class="row">
 
-                                
 
-                                    <h2 style="color:#ee2b47; font-size: 40px; padding-bottom:30px; display: inline-block;"> <strong style="color:#f6f6f6"> Check Your <span style="color:#ee2b47">Eligibility</span> </strong> </h2>
-                                    <div class="x-touch" onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
-                                        <div class="x">
-                                            <div class="line1"></div>
-                                            <div class="line2"></div>
-                                        </div>
+
+                                <h2 style="color:#ee2b47; font-size: 40px; padding-bottom:30px; display: inline-block;">
+                                    <strong style="color:#f6f6f6"> Check Your <span
+                                            style="color:#ee2b47">Eligibility</span> </strong> </h2>
+                                <div class="x-touch"
+                                    onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
+                                    <div class="x">
+                                        <div class="line1"></div>
+                                        <div class="line2"></div>
                                     </div>
-                                
+                                </div>
 
 
-                                    <div class="form-group items">
-                                        <select id="name_of_country" class="form-control rounded-pill border-0 shadow-sm px-4">
-                                            <option value="Null" >Country</option>
-                                            <option value="Austria" rel="icon-temperature">Austria</option>
-                                            <option value="Belgium">Belgium</option>
-                                            <option value="Bulgaria">Bulgaria</option>
-                                            <option value="Croatia">Croatia</option>
-                                            <option value="Cyprus">Cyprus</option>
-                                            <option value="Czechia">Czechia</option>
-                                            <option value="Denmark">Denmark</option>
-                                            <option value="Estonia">Estonia</option>
-                                            <option value="Finland">Finland</option>
-                                            <option value="France">France</option>
-                                            <option value="Germany">Germany</option>
-                                            <option value="Greece">Greece</option>
-                                            <option value="Hungary">Hungary</option>
-                                            <option value="Ireland">Ireland</option>
-                                            <option value="Italy">Italy</option>
-                                            <option value="Latvia">Latvia</option>
-                                            <option value="Lithuania">Lithuania</option>
-                                            <option value="Luxembourg">Luxembourg</option>
-                                            <option value="Malta">Malta</option>
-                                            <option value="Netherlands">Netherlands</option>
-                                            <option value="Poland">Poland</option>
-                                            <option value="Portugal">Portugal</option>
-                                            <option value="Romania">Romania</option>
-                                            <option value="Slovakia">Slovakia</option>
-                                            <option value="Slovenia">Slovenia</option>
-                                            <option value="Spain">Spain</option>
-                                            <option value="Sweden">Sweden</option>
-                                            
 
-                                    
-                                    
-                                    
-                                        </select>
-                                    </div>
+
 
 
 
@@ -187,9 +152,9 @@
                                 </div>
 
                                 <!-- <div class="form-group items">
-                            <input id="country_phone" type="number" placeholder="Enter Phone No" required="" autofocus=""
-                                class="form-control rounded-pill border-0 shadow-sm px-4">
-                        </div> -->
+                                <input id="country_phone" type="number" placeholder="Enter Phone No" required="" autofocus=""
+                                    class="form-control rounded-pill border-0 shadow-sm px-4">
+                            </div> -->
 
 
                                 <div class="form-group mb-md-0 items">
@@ -201,9 +166,11 @@
                                 </div>
 
                                 <form>
-                                    <div class="form-group mb-md-0 items" id="recaptcha-container" style="margin-bottom:0; margin-left:40px; "></div>
+                                    <div class="form-group mb-md-0 items" id="recaptcha-container"
+                                        style="margin-bottom:0; margin-left:40px; "></div>
                                     <button class="btn btn-primary btn-md text-uppercase" type="button"
-                                        onclick="phoneAuth(); " style="background-color:#ee2b47; margin-top:10px; margin-bottom:10px; width:120px; border-radius: 10px;">
+                                        onclick="phoneAuth(); "
+                                        style="background-color:#ee2b47; margin-top:10px; margin-bottom:10px; width:120px; border-radius: 10px;">
                                         Send Code
                                     </button>
 
@@ -211,13 +178,14 @@
 
 
 
-                                <form class="items" >
-                                    
-                                    <input class="form-control " type="text" id="verificationCode" 
+                                <form class="items">
+
+                                    <input class="form-control " type="text" id="verificationCode"
                                         placeholder="Enter verification code" />
 
                                     <button class="btn btn-primary btn-md text-uppercase" id="verifyButton"
-                                        type="button" onclick="codeverify();" style="background-color:#ee2b47; margin-top:10px; margin-bottom:10px; width:120px; margin-left:5px; border-radius: 10px;">
+                                        type="button" onclick="codeverify();"
+                                        style="background-color:#ee2b47; margin-top:10px; margin-bottom:10px; width:120px; margin-left:5px; border-radius: 10px;">
                                         Verify code
                                     </button>
                                 </form>
@@ -234,7 +202,8 @@
 
 
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary " id="country_button" style="background-color:#ee2b47; border-radius: 10px; margin-left:-6px; width:120px;" >SUBMIT</button>
+                                    <button type="submit" class="btn btn-primary " id="country_button"
+                                        style="background-color:#ee2b47; border-radius: 10px; margin-left:-6px; width:120px;">SUBMIT</button>
                                 </div>
 
                             </div>
@@ -245,22 +214,25 @@
         </div>
     </div>
 
+
+
+
+
+
     <div class="country-image">
-
-        <img src="./images/europian-union.jpg" style="width:100%; height:500px;">
-
+        <img src="./images/USA.jpg" style="width:100%; height:500px;">
     </div>
 
 
     <section id="mid">
-    
+
         <div class="container">
-    
-    
+
+
             <div class="main-row"
                 style="border-radius: 20px; display: inline-block; background-color:#ee2b47; color: white;">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top:2%;  text-align: center;">
-    
+
                     <h3>How well do you fit this programme?
                         <br>
                         Find out with our <strong>BestFit </strong> tool!</h3>
@@ -268,70 +240,29 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <img src="https://monet-prtl-co.imgix.net/Shared/BestFit/bestfit_banner_desktop.svg" alt="">
                     <a style="margin-left:3%;" onclick="pop1()" class="filled-button">Check Your Eligibility</a>
-    
+
                 </div>
             </div>
-    
-    
+
+
         </div>
     </section>
 
+    <div class="container" style="width:100%; margin-top:40px; margin-bottom:20px; ">
 
-
-
-
-
-    <div class="container" style="width:100%; margin-top:40px; margin-bottom:20px;">
-
-        <div class="Tabs" style="border-left: none; border-top: none;   ;overflow-y: scroll; height: 750px;">
-
-            <button style="margin-top:10px;" class="tablinks" onclick="openEvent(event, 'c1')"
-                id="defaultOpen"><img src="./images/flag-austria.jpg" style="border-radius: 100%;margin-right: 10px;" width='30px'; height='30px'>Austria</button>
-            <button class="tablinks" onclick="openEvent(event, 'c2')"><img src="./images/flag-Belgium.jpg" style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Belgium</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-bulgaria.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Bulgaria</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Croatia.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Croatia</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Cyprus.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Cyprus</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Czech-republic.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Czechia</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Finland.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Finland</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-France.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">France</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Germany.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Germany</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Greece.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Greece</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Hungary.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Hungary</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Ireland.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Ireland</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Italy.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Italy</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Latvian.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Latvia</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Lithuania.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Lithuania</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Luxembourg.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Luxembourg</button>
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-Malta.jpg"style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Malta</button>
-
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-netherlands.jpg"
-                   style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Netherlands</button>
-
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-poland.jpg"
-                   style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Poland</button>
-
-            <button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-portugal.jpg"
-                   style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Portugal</button>
-
-<button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-romania.jpg"
-       style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Romania</button>
-<button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-slovakia.jpg"
-       style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Slovakia</button>
-<button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-slovenia.jpg"
-       style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Slovenia</button>
-<button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-spain.jpg"
-       style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Spain</button>
-
-<button class="tablinks" onclick="openEvent(event, 'c3')"><img src="./images/flag-sweden.jpg"
-       style="border-radius: 100%;margin-right: 10px;" width=30px height="30px">Sweden</button>
-
+        <div class="Tabs" style="border-left: none; border-top: none;">
+            <img src="./images/flag-usa.png" style="width:90%;height: 80px; margin-left:5%; border-radius: 5px; ">
+            <button style="margin-top:10px;" class="tablinks" onclick="openEvent(event, 'OView')"
+                id="defaultOpen">Overview</button>
+            <button class="tablinks" onclick="openEvent(event, 'SVisa')">Expense</button>
+            <button class="tablinks" onclick="openEvent(event, 'WPermit')">Post Study Work</button>
         </div>
 
-        <div id="c1" class="tabcontent">
+        <div id="OView" class="tabcontent">
             <div class="hero">
                 <div class="btn_box">
-                    <button id="btn1" onclick="OpenBtn1()">Overview</button>
-                    <button id="btn2" onclick="OpenBtn2()">Student Visa</button>
+                    <button id="btn1" onclick="OpenBtn1()">Pricing</button>
+                    <button id="btn2" onclick="OpenBtn2()">Feature</button>
                     <button id="btn3" onclick="OpenBtn3()">Work Permit</button>
                 </div>
                 <div id="content1" class="Content-block">
@@ -348,6 +279,7 @@
                         adipiscing elit. Vestibulum vulputate, augue at porta maximus, nunc sem tempus enim, id gravida
                         libero elit ac felis. Vivamus ultricies ac est eu rutrum. Donec ac ipsum ut lectus aliquet
                         dapibus.
+
                     </p>
                 </div>
                 <div id="content2" class="Content-block">
@@ -383,12 +315,12 @@
             </div>
         </div>
 
-        <div id="c2" class="tabcontent">
+        <div id="SVisa" class="tabcontent">
             <div class="hero">
                 <div class="btn_box">
-                    <button id="btn2_1" onclick="OpenBtn2_1()">Home</button>
+                    <button id="btn2_1" onclick="OpenBtn2_1()">Pricing</button>
                     <button id="btn2_2" onclick="OpenBtn2_2()">Feature</button>
-                    <button id="btn2_3" onclick="OpenBtn2_3()">Pricing</button>
+                    <button id="btn2_3" onclick="OpenBtn2_3()">Work Permit</button>
                 </div>
                 <div id="content2_1" class="Content-block">
                     <p>
@@ -436,12 +368,12 @@
             </div>
         </div>
 
-        <div id="c3" class="tabcontent">
+        <div id="WPermit" class="tabcontent">
             <div class="hero">
                 <div class="btn_box">
-                    <button id="btn3_1" onclick="OpenBtn3_1()">Home</button>
+                    <button id="btn3_1" onclick="OpenBtn3_1()">Pricing</button>
                     <button id="btn3_2" onclick="OpenBtn3_2()">Feature</button>
-                    <button id="btn3_3" onclick="OpenBtn3_3()">Pricing</button>
+                    <button id="btn3_3" onclick="OpenBtn3_3()">Work Permit</button>
                 </div>
                 <div id="content3_1" class="Content-block">
                     <p>
@@ -496,58 +428,59 @@
 
     <footer class="mainfooter" role="contentinfo">
         <div class="footer-middle">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <!--Column1-->
-              <div class="footer-pad">
-                <h4>Useful Links</h4>
-                <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="permanent-residence.html">Permanent Residence</a></li>
-                  <li><a href="jobseeker.html">Jobseeker Visa</a></li>
-                  <li><a href="IELTS.html">IELTS</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Useful Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="permanent-residence.html">Permanent Residence</a></li>
+                                <li><a href="jobseeker.html">Jobseeker Visa</a></li>
+                                <li><a href="IELTS.html">IELTS</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Location</h4>
+                            <ul class="list-unstyled">
+                                H.B. Twin Tower, 8th Floor , Netaji Subhash Place, Pitam Pura, Delhi, 110034
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>More Info</h4>
+                            <ul class="list-unstyled">
+                                <li>Phone: <a href="tel:7838884977">7838884977</a></li>
+                                <li>Email: <a href="support@ardennaimmigration.com">support@ardennaimmigration.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Follow Us</h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2018 - Company Name. All rights reserved.</p>
+                    </div>
+                </div>
+
+
             </div>
-            <div class="col-md-3 ">
-              <!--Column1-->
-              <div class="footer-pad">
-                <h4>Location</h4>
-                <ul class="list-unstyled">
-                 H.B. Twin Tower, 8th Floor , Netaji Subhash Place, Pitam Pura, Delhi, 110034
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3 ">
-              <!--Column1-->
-              <div class="footer-pad">
-                <h4>More Info</h4>
-                <ul class="list-unstyled">
-                  <li>Phone: <a href="tel:7838884977">7838884977</a></li>
-                  <li>Email: <a href="support@ardennaimmigration.com">support@ardennaimmigration.com</a></li>
-               </ul>
-              </div>
-            </div>
-              <div class="col-md-3">
-                  <h4>Follow Us</h4>
-                  <ul class="social-network social-circle">
-                   <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                   <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                  </ul>				
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-12 copy">
-                  <p class="text-center">&copy; Copyright 2018 - Company Name.  All rights reserved.</p>
-              </div>
-          </div>
-      
-      
         </div>
-        </div>
-      </footer>
+    </footer>
 
     <script>
         function openEvent(evt, cityName) {
@@ -701,14 +634,14 @@
         $(".x").click(function () {
             $("#score-pop1").css("display", "none");
         });
-   
+
 
     </script>
     <!-- Firebase scripts -->
     <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
-    
+
     <script>
         var firebaseConfig = {
             apiKey: "AIzaSyDXJL0qVGgTPpOhZfjJsa-Ne_dxjjWADH0",
@@ -787,9 +720,6 @@
             });
         }
 
-        
-
-
         const database = firebase.database();
         const rootRef4 = database.ref("Country_Data");
         const country_name = document.getElementById("country_name");
@@ -801,7 +731,6 @@
         const country_city = document.getElementById("country_city");
         const country_email = document.getElementById("country_email");
         const country_button = document.getElementById("country_button");
-         const name_of_country = document.getElementById("name_of_country");
 
         country_button.addEventListener("click", (e) => {
             e.preventDefault();
@@ -814,13 +743,13 @@
                 Education: country_edu.value,
                 Discipline: country_disp.value,
                 City: country_city.value,
-                Country: name_of_country.value,
+                Country: "USA",
 
             });
-           
         });
 
     </script>
+
 </body>
 
 </html>

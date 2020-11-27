@@ -10097,7 +10097,7 @@ footer {
   color: white;
 }
 footer .container {
-  height: fit-content;
+  height: auto;
 }
 footer a {
   color: #fff;
@@ -10106,7 +10106,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #fa944b;
+  color: #ee2b47;
   text-decoration: none;
 }
 

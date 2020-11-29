@@ -9987,13 +9987,15 @@ input {
 }
 #imagedetails .col-3 {
   float: left;
-  padding: 15px;
-  border: 1px solid red;
+  height: 384px;
 }
 #imagedetails .col-4 {
   float: left;
   padding: 15px;
   border: 1px solid red;
+}
+#imagedetails .row{
+  width:50%;
 }
 #imagedetails .col-5 {
   float: left;
@@ -10002,7 +10004,7 @@ input {
 }
 #imagedetails .col-6 {
   float: left;
-  height: 250px;
+  height: 0px;
 }
 #imagedetails .col-7 {
   float: left;

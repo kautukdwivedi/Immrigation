@@ -6769,7 +6769,7 @@ body #job,
 body #Top_img,
 body #testimonial,
 body #footer,
-body #about-page-section-3,
+body #about,
 body #skills,
 body #team-member,
 body #portfolio,
@@ -7889,7 +7889,7 @@ body #about {
   height: 100%;
   background-size: cover !important;
   background-position: 50% 60% !important;
-  color: #fff;
+  background: transparent;
 }
 body #Top_img {
   background: url(../img/Top_img.jpg);
@@ -7907,6 +7907,17 @@ body #job {
   background-position: 50% 60% !important;
   background: transparent;
 }
+body #accordian {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0%;
+  background: transparent;
+}
+@media only screen and (max-width: 1000px) {
+  body #job{
+    display:none;
+  }
+}
 body #job h2,
 body #job .h2 {
   color: white;
@@ -7915,9 +7926,13 @@ body #job p.subheading,
 body #job h1 {
   color: white;
 }
-body #About_us h1,
-body #About_us .h1 {
-  color: #fff;
+body #about h2,
+body #about .h2 {
+  color: white;
+}
+body #about p.subheading,
+body #about h1 {
+  color: white;
 }
 body #testimonial h1,
 body #testimonial .h1 {
@@ -9654,6 +9669,7 @@ input {
   ul {
     display: none;
   }
+ 
   nav ul li,
   nav ul ul li {
     display: block;
@@ -10369,5 +10385,100 @@ select {
 @media only screen and (max-width: 1000px) {
   .container {
     text-align: center;
+  }
+}
+#accordian .accordion {
+  width: 100%;
+  margin: 30px auto 20px;
+  background:#2c2e3e ;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 5px
+}
+
+#accordian .accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 15px;
+  color: #f6f6f6;
+  font-size: 17px;
+  font-weight: 700;
+  border-bottom: 1px solid #f6f6f6;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease
+}
+
+#accordian .accordion li:last-child .link {
+  border-bottom: 0;
+}
+
+#accordian .accordion li i {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 18px;
+  color: #f6f6f6;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease
+}
+
+#accordian .accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 16px;
+}
+
+#accordian .accordion li.open .link {
+  color: #ee2b47;
+}
+
+#accordian .accordion li.open i {
+  color: #ee2b47;
+}
+
+#accordian .accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+
+#accordian .submenu {
+  display: none;
+  background: #444359;
+  font-size: 14px;
+}
+
+#accordian .submenu li {
+  border-bottom: 1px solid #f6f6f6;
+}
+
+#accordian .submenu a ,p{
+  display: block;
+  text-decoration: none;
+  color: #f6f6f6;
+  padding: 12px;
+  padding-left: 20px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease
+}
+
+#accordian .submenu a:hover {
+  background: #972738;
+  color: #f6f6f6;
+}
+
+@media only screen and (max-width: 968px){
+  #accordian ul,a{
+    display:block;
+  }
+}
+@media only screen and (min-width: 1000px){
+  #accordian{
+    display:none;
   }
 }

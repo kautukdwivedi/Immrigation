@@ -9889,6 +9889,7 @@ input {
   transition: 0.5s;
   font-size: 17px;
   font-weight: bolder;
+  transition-delay: 50ms ;
 }
 /* .Tabs button:hover {
   background-color: rgb(176, 215, 225);

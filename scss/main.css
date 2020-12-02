@@ -7892,7 +7892,7 @@ body #about {
   background: transparent;
 }
 body #Top_img {
-  background: url(../image/Top_img.jpg);
+  background: url(../images/Top_img.jpg);
   width: 100%;
   height: 500px;
   background-size: cover !important;
@@ -8536,35 +8536,35 @@ body #top_banner .banner {
   background-position: 50% 25%;
 }
 body #top_banner .banner_A {
-  background-image: url("../image/Australia.jpg");
+  background-image: url("../images/Australia.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 150px 0px;
   background-position: 50% 25%;
 }
 body #top_banner .banner_E {
-  background-image: url("../image/Europe.jpg");
+  background-image: url("../images/Europe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 150px 0px;
   background-position: 50% 25%;
 }
 body #top_banner .banner_N {
-  background-image: url("../image/New.jpg");
+  background-image: url("../images/New.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 150px 0px;
   background-position: 50% 25%;
 }
 body #top_banner .banner_C {
-  background-image: url("../image/Canada.jpg");
+  background-image: url("../images/Canada.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 150px 0px;
   background-position: 50% 25%;
 }
 body #top_banner .banner_U {
-  background-image: url("../image/UK.jpg");
+  background-image: url("../images/UK.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 150px 0px;
@@ -8713,7 +8713,7 @@ body #faq .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top: 0px;
 }
 body #contact {
-  background-image: url(../image/map1.png);
+  background-image: url(../images/map1.png);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9236,7 +9236,7 @@ body #features-page .subsection4 .ribbon {
   z-index: 10;
 }
 body #features-page .subsection4 .recommended {
-  background: url(../image/recommended.png) 0 0 no-repeat;
+  background: url(../images/recommended.png) 0 0 no-repeat;
 }
 body #features-page .subsection4 .featured-ribbon {
   width: 220px;

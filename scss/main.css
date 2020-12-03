@@ -9952,10 +9952,11 @@ input {
   box-shadow: 0 5px 10px #ee2b47;
 }
 #imagedetails .wrapper{
-  height:100vh;
+  height:140vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
 }
 .wrapper img{
   width:100%;

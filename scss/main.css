@@ -9532,7 +9532,7 @@ nav .logo {
   font-weight: 600;
   line-height: 70px;
   z-index: 500;
-  padding-left: 60px;
+  padding-left: 70px;
 }
 nav ul {
   float: right;
@@ -9617,6 +9617,11 @@ input {
 .fa-caret-down {
   font-size: 20px;
   z-index: 500;
+}
+@media all and (max-width:1024px){
+  nav .logo{
+    padding-left:10px;
+  }
 }
 @media all and (max-width: 968px) {
   nav {

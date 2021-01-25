@@ -10023,7 +10023,7 @@ input {
 }
 @media all and (max-width:400px){
   #imagedetails .wrapper{
-    height:250vh;
+    height:330vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
